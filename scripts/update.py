@@ -169,12 +169,17 @@ def cdn_head_manifest(source: dict) -> dict:
             if urlsplit(response.geturl()).hostname != "cdn.openai.com":
                 raise ValueError("Unexpected OpenAI CDN redirect: " + response.geturl())
             size = response.headers.get("Content-Length")
+            content_type = (response.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+            expected_type = "application/pdf" if parts.path.endswith(".pdf") else "application/zip" if parts.path.endswith(".zip") else None
+            if expected_type is None or content_type != expected_type:
+                raise ValueError(f"Unexpected OpenAI CDN content type: {url} ({content_type})")
             records.append({
                 "label": asset["label"],
                 "url": url,
                 "etag": response.headers.get("ETag"),
                 "last_modified": response.headers.get("Last-Modified"),
                 "content_length": int(size) if size and size.isdigit() else None,
+                "content_type": content_type,
             })
     return {
         "schema_version": 1,
@@ -182,7 +187,7 @@ def cdn_head_manifest(source: dict) -> dict:
         "provider": "openai",
         "homepage": source["homepage"],
         "license": source["license"],
-        "monitoring": "Official CDN HEAD ETag, Last-Modified and Content-Length (not a content hash)",
+        "monitoring": "Official CDN HEAD ETag, Last-Modified, Content-Length and Content-Type (not a content hash)",
         "files": sorted(records, key=lambda r: r["url"]),
     }
 
