@@ -25,7 +25,7 @@ python -m unittest discover -s tests -v
 python scripts/update.py
 ```
 
-The updater needs internet access. GitHub Actions checks sources every Monday, and opens a PR only if tracked metadata changes. OpenAI research pages currently return HTTP 403 from GitHub-hosted runners; these sources will be **reported as inaccessible** rather than falsely marked current. Other successful source updates can still generate a PR; check the workflow's Summary section for degraded coverage. Run it manually from **Actions → Update research index → Run workflow**. Enable **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests** if your repository policy requires it.
+The updater needs internet access. GitHub Actions checks sources every Monday, and opens a PR only if tracked metadata changes. OpenAI HTML research listings return HTTP 403 from GitHub-hosted runners. To avoid relying on those endpoints, the indexer reads OpenAI's **official news RSS feed** (selecting Research and relevant AI Adoption entries) and tracks OpenAI Signals ZIP/PDF revisions via **official CDN HEAD requests**. Successful fallback checks are required for a complete update; upstream failures remain visible in the workflow summary. Run it manually from **Actions → Update research index → Run workflow**. Enable **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests** if your repository policy requires it.
 
 ## Agent skill
 
@@ -33,7 +33,7 @@ Install the directory `skills/research-explorer` as an [Agent Skill](https://age
 
 ## Scope and quality
 
-Publisher usage data measures **observed adoption**, not model capability, net productivity, or displacement. These require distinct evidence and compatible denominators. Source websites may be incomplete or change their markup; discoveries are reviewed before merging. Automatic ingestion adds links and metadata only, never full report text. Dates for new discoveries remain unknown until verified.
+Publisher usage data measures **observed adoption**, not model capability, net productivity, or displacement. These require distinct evidence and compatible denominators. Source websites may be incomplete or change their markup; discoveries are reviewed before merging. Automatic ingestion adds links and metadata only, never full report text. The official RSS supplies publication dates for OpenAI entries; other discovered entries can retain unknown dates until verified.
 
 OpenAI Signals public dataset declares CC BY 4.0 and the Anthropic EconomicIndex Hugging Face dataset declares MIT; these **do not automatically license each linked report**. Keep source attribution and review rights before redistributing documents or datasets.
 

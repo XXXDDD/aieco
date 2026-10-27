@@ -8,6 +8,8 @@ import json
 import os
 import re
 import sys
+import xml.etree.ElementTree as ET
+from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, urlunsplit
@@ -107,6 +109,84 @@ def discover(provider: str, source_url: str, markup: str) -> list[dict]:
     return list(found.values())
 
 
+
+def discover_openai_rss(markup: str) -> list[dict]:
+    """Read OpenAI's official RSS without scraping blocked HTML pages.
+
+    Research articles are kept; AI Adoption posts need explicit
+    empirical/economic keywords. RSS publication timestamps come from OpenAI.
+    """
+    root = ET.fromstring(markup)
+    if root.tag != "rss":
+        raise ValueError("Unexpected OpenAI RSS document root")
+    result = {}
+    adoption_terms = re.compile(
+        r"\b(research|report|study|survey|dataset|data|econom(?:y|ic|ics)|"
+        r"employment|labor|labour|productiv\w*|adoption|usage|workforce|jobs?)\b",
+        re.IGNORECASE,
+    )
+    for item in root.findall("./channel/item"):
+        title = " ".join((item.findtext("title") or "").split())
+        url = canonical_url((item.findtext("link") or "").strip())
+        category = (item.findtext("category") or "").strip()
+        if not permitted_research_url("openai", url) or not title:
+            continue
+        if category.casefold() != "research" and not (
+            category.casefold() == "ai adoption" and adoption_terms.search(title)
+        ):
+            continue
+        date_value = None
+        raw_date = item.findtext("pubDate")
+        if raw_date:
+            try:
+                date_value = parsedate_to_datetime(raw_date).date().isoformat()
+            except (TypeError, ValueError, IndexError):
+                pass
+        result[url] = {
+            "url": url,
+            "title": title[:180],
+            "published_at": date_value,
+            "topics": ["research"] if category.casefold() == "research" else ["adoption"],
+        }
+    if not result:
+        raise ValueError("No relevant entries in official OpenAI RSS feed")
+    return list(result.values())
+
+
+def cdn_head_manifest(source: dict) -> dict:
+    """Track immutable-ish asset identifiers without mirroring binary files."""
+    assets = source.get("assets") or []
+    if not assets:
+        raise ValueError("Missing registered OpenAI CDN assets")
+    records = []
+    for asset in assets:
+        url = asset["url"]
+        parts = urlsplit(url)
+        if parts.scheme != "https" or parts.hostname != "cdn.openai.com":
+            raise ValueError("Untrusted OpenAI asset hostname: " + url)
+        request = Request(url, headers=HEADERS, method="HEAD")
+        with urlopen(request, timeout=35) as response:
+            if urlsplit(response.geturl()).hostname != "cdn.openai.com":
+                raise ValueError("Unexpected OpenAI CDN redirect: " + response.geturl())
+            size = response.headers.get("Content-Length")
+            records.append({
+                "label": asset["label"],
+                "url": url,
+                "etag": response.headers.get("ETag"),
+                "last_modified": response.headers.get("Last-Modified"),
+                "content_length": int(size) if size and size.isdigit() else None,
+            })
+    return {
+        "schema_version": 1,
+        "id": source["id"],
+        "provider": "openai",
+        "homepage": source["homepage"],
+        "license": source["license"],
+        "monitoring": "Official CDN HEAD ETag, Last-Modified and Content-Length (not a content hash)",
+        "files": sorted(records, key=lambda r: r["url"]),
+    }
+
+
 def update_catalog(registry: dict) -> tuple[int, list[str]]:
     path = ROOT / "research/catalog.json"
     catalog = read_json(path)
@@ -116,7 +196,8 @@ def update_catalog(registry: dict) -> tuple[int, list[str]]:
     for source in registry["research_pages"]:
         try:
             markup = fetch_text(source["url"])
-            candidates = discover(source["provider"], source["url"], markup)
+            candidates = (discover_openai_rss(markup) if source.get("kind") == "rss"
+                          else discover(source["provider"], source["url"], markup))
             if not candidates:
                 raise ValueError("No usable research links; layout may have changed")
             for item in candidates:
@@ -129,8 +210,8 @@ def update_catalog(registry: dict) -> tuple[int, list[str]]:
                     "provider": source["provider"],
                     "title": item["title"],
                     "url": item["url"],
-                    "published_at": None,
-                    "topics": [],
+                    "published_at": item.get("published_at"),
+                    "topics": item.get("topics", []),
                     "description": "",
                     "source": "discovered:" + source["id"],
                     "dataset_ids": [],
@@ -184,11 +265,13 @@ def update_datasets(registry: dict) -> tuple[int, list[str]]:
     errors = []
     for source in registry["datasets"]:
         try:
-            body = fetch_text(source["url"])
-            if source["kind"] == "openai-links":
+            if source["kind"] == "cdn-head":
+                manifest = cdn_head_manifest(source)
+            elif source["kind"] == "openai-links":
+                body = fetch_text(source["url"])
                 manifest = openai_manifest(source, body)
             elif source["kind"] == "huggingface":
-                manifest = huggingface_manifest(source, json.loads(body))
+                manifest = huggingface_manifest(source, json.loads(fetch_text(source["url"])))
             else:
                 raise ValueError("Unsupported source kind")
             path = ROOT / "data/manifests" / (source["id"] + ".json")
