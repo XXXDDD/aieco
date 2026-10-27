@@ -41,7 +41,7 @@ class CatalogTests(unittest.TestCase):
         source = {"id": "test", "provider": "openai", "homepage": "https://openai.com/signals/data-download/",
                   "license": "CC-BY-4.0", "assets": [{"label": "Data", "url": "https://cdn.openai.com/signals/data-dictionary.pdf"}]}
         class FakeResponse:
-            headers = {"Content-Length": "123", "ETag": "abc", "Last-Modified": "Tue, 27 Oct 2026 00:00:00 GMT"}
+            headers = {"Content-Length": "123", "ETag": "abc", "Last-Modified": "Tue, 27 Oct 2026 00:00:00 GMT", "Content-Type": "application/pdf"}
             def geturl(self):
                 return "https://cdn.openai.com/signals/data-dictionary.pdf"
             def __enter__(self):
@@ -52,6 +52,12 @@ class CatalogTests(unittest.TestCase):
             manifest = update.cdn_head_manifest(source)
         self.assertEqual(manifest["files"][0]["etag"], "abc")
         self.assertEqual(manifest["files"][0]["content_length"], 123)
+        self.assertEqual(manifest["files"][0]["content_type"], "application/pdf")
+        FakeResponse.headers["Content-Type"] = "text/html"
+        with patch.object(update, "urlopen", return_value=FakeResponse()):
+            with self.assertRaises(ValueError):
+                update.cdn_head_manifest(source)
+        FakeResponse.headers["Content-Type"] = "application/pdf"
         source["assets"][0]["url"] = "https://example.com/fake.pdf"
         with self.assertRaises(ValueError):
             update.cdn_head_manifest(source)
