@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "research_pages": [
+    {
+      "id": "openai-signals",
+      "provider": "openai",
+      "url": "https://openai.com/signals/"
+    },
+    {
+      "id": "openai-research",
+      "provider": "openai",
+      "url": "https://openai.com/signals/research/"
+    },
+    {
+      "id": "anthropic-economics",
+      "provider": "anthropic",
+      "url": "https://www.anthropic.com/research/team/economics"
+    }
+  ],
+  "datasets": [
+    {
+      "id": "openai-signals-v3",
+      "provider": "openai",
+      "kind": "openai-links",
+      "url": "https://openai.com/signals/data-download/",
+      "homepage": "https://openai.com/signals/data-download/",
+      "license": "CC-BY-4.0"
+    },
+    {
+      "id": "anthropic-economic-index",
+      "provider": "anthropic",
+      "kind": "huggingface",
+      "url": "https://huggingface.co/api/datasets/Anthropic/EconomicIndex",
+      "homepage": "https://huggingface.co/datasets/Anthropic/EconomicIndex",
+      "license": "MIT"
+    }
+  ]
+}
