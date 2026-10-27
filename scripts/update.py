@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import html
 import json
+import os
 import re
 import sys
 from html.parser import HTMLParser
@@ -199,15 +200,61 @@ def update_datasets(registry: dict) -> tuple[int, list[str]]:
     return updated, errors
 
 
+def classify_source_errors(errors: list[str], registry: dict) -> tuple[list[str], list[str]]:
+    """OpenAI returning HTTP 403 on CI is degraded coverage, not a GitHub auth failure.
+
+    Keep all unexpected exceptions and other provider failures fatal rather than
+    treating an incomplete catalog as completely healthy.
+    """
+    openai_ids = {
+        source["id"]
+        for source in registry["research_pages"] + registry["datasets"]
+        if source["provider"] == "openai"
+    }
+    warnings, failures = [], []
+    for error in errors:
+        source_id = error.partition(": ")[0]
+        if source_id in openai_ids and "HTTP Error 403" in error:
+            warnings.append(error)
+        else:
+            failures.append(error)
+    return warnings, failures
+
+
+def write_github_summary(new: int, changed: int, warnings: list[str], failures: list[str]) -> None:
+    path = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not path:
+        return
+    lines = [
+        "## aieco upstream update",
+        f"- New research records: **{new}**",
+        f"- Changed dataset manifests: **{changed}**",
+        f"- Source coverage: **{'degraded' if warnings or failures else 'complete'}**",
+    ]
+    if warnings:
+        lines += ["", "### Inaccessible sources (retaining existing records)"]
+        lines += [f"- {error}" for error in warnings]
+        lines += ["", "OpenAI returned HTTP 403 to this runner. Existing entries are preserved; "
+                  "this run **did not verify freshness** of the blocked sources."]
+    if failures:
+        lines += ["", "### Fatal upstream errors"]
+        lines += [f"- {error}" for error in failures]
+    with open(path, "a", encoding="utf-8") as output:
+        output.write("\n".join(lines) + "\n")
+
+
 def main() -> int:
     registry = read_json(ROOT / "sources/registry.json")
     new, research_errors = update_catalog(registry)
     changed, dataset_errors = update_datasets(registry)
     print(f"New research: {new}; changed manifests: {changed}")
-    errors = research_errors + dataset_errors
-    for error in errors:
+    warnings, failures = classify_source_errors(research_errors + dataset_errors, registry)
+    for warning in warnings:
+        print("WARNING: source unavailable; preserved existing catalog: " + warning, file=sys.stderr)
+    for error in failures:
         print("ERROR: " + error, file=sys.stderr)
-    return 1 if errors else 0
+    write_github_summary(new, changed, warnings, failures)
+    return 1 if failures else 0
 
 
 if __name__ == "__main__":
