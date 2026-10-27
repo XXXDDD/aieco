@@ -1,0 +1,36 @@
+name: Update research index
+on:
+  schedule:
+    - cron: "17 2 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: research-index
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check upstream sources
+        run: python scripts/update.py
+      - name: Validate metadata and tests
+        run: |
+          python scripts/validate.py
+          python -m unittest discover -s tests -v
+      - name: Create review PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/research-refresh
+          delete-branch: true
+          title: "chore(data): refresh research and dataset metadata"
+          commit-message: "chore(data): update upstream research metadata"
+          body: "Automated metadata diff. Verify new research, dates, taxonomy, licenses and dataset revisions before merging."
+          add-paths: |
+            research/catalog.json
+            data/manifests/**

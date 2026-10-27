@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "openai-expanding-world-of-work",
+      "provider": "openai",
+      "title": "ChatGPT’s expanding world of work",
+      "url": "https://openai.com/index/chatgpt-expanding-world-of-work/",
+      "published_at": "2026-10-26",
+      "topics": [
+        "adoption",
+        "labor",
+        "work-activities"
+      ],
+      "description": "OpenAI Signals v3.0: work-related ChatGPT usage across activities and countries.",
+      "source": "curated",
+      "dataset_ids": [
+        "openai-signals-v3"
+      ]
+    },
+    {
+      "id": "openai-jobs-transition",
+      "provider": "openai",
+      "title": "Modeling an AI jobs transition",
+      "url": "https://openai.com/index/modeling-ai-jobs-transition/",
+      "published_at": "2026-04-25",
+      "topics": [
+        "labor",
+        "automation",
+        "employment"
+      ],
+      "description": "Framework distinguishing automation risk, reorganization, demand growth and limited change.",
+      "source": "curated",
+      "dataset_ids": [
+        "openai-signals-v3"
+      ]
+    },
+    {
+      "id": "anthropic-labor-market-impacts",
+      "provider": "anthropic",
+      "title": "Labor market impacts of AI: A new measure and early evidence",
+      "url": "https://www.anthropic.com/research/labor-market-impacts",
+      "published_at": "2026-03-05",
+      "topics": [
+        "labor",
+        "exposure",
+        "employment"
+      ],
+      "description": "Observed exposure combines theoretical task capability and actual AI usage.",
+      "source": "curated",
+      "dataset_ids": [
+        "anthropic-economic-index"
+      ]
+    },
+    {
+      "id": "anthropic-cadences",
+      "provider": "anthropic",
+      "title": "Anthropic Economic Index report: Cadences",
+      "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+      "published_at": "2026-06-26",
+      "topics": [
+        "adoption",
+        "agents",
+        "usage"
+      ],
+      "description": "Economic Index methodology and usage patterns across Claude products.",
+      "source": "curated",
+      "dataset_ids": [
+        "anthropic-economic-index"
+      ]
+    },
+    {
+      "id": "anthropic-frontier-expectations",
+      "provider": "anthropic",
+      "title": "Working at the frontier shapes expectations for the future",
+      "url": "https://www.anthropic.com/research/expectations-for-the-future",
+      "published_at": "2026-10-16",
+      "topics": [
+        "employment",
+        "productivity",
+        "expectations"
+      ],
+      "description": "Anthropic's internal adoption and expectations research.",
+      "source": "curated",
+      "dataset_ids": []
+    }
+  ]
+}
