@@ -83,6 +83,98 @@
       "description": "Anthropic's internal adoption and expectations research.",
       "source": "curated",
       "dataset_ids": []
+    },
+    {
+      "id": "openai-global-adoption",
+      "provider": "openai",
+      "title": "How ChatGPT adoption has expanded",
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded/",
+      "published_at": "2026-06-30",
+      "topics": [
+        "adoption",
+        "geography",
+        "demographics"
+      ],
+      "description": "OpenAI Signals analysis of ChatGPT usage depth, breadth and geographic adoption.",
+      "source": "curated",
+      "dataset_ids": [
+        "openai-signals-v3"
+      ]
+    },
+    {
+      "id": "openai-education-rct",
+      "provider": "openai",
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
+      "published_at": "2026-08-27",
+      "topics": [
+        "education",
+        "productivity",
+        "experiment"
+      ],
+      "description": "Experiment on ChatGPT access and causal-reasoning training among students.",
+      "source": "curated",
+      "dataset_ids": []
+    },
+    {
+      "id": "openai-small-business",
+      "provider": "openai",
+      "title": "AI is becoming a first hire for small businesses",
+      "url": "https://openai.com/index/ai-first-hire-small-business/",
+      "published_at": "2026-05-25",
+      "topics": [
+        "entrepreneurship",
+        "business",
+        "adoption"
+      ],
+      "description": "Analysis of ChatGPT use for planning, running and growing small businesses.",
+      "source": "curated",
+      "dataset_ids": []
+    },
+    {
+      "id": "anthropic-robotics-work",
+      "provider": "anthropic",
+      "title": "Can we predict the jobs robots will do?",
+      "url": "https://www.anthropic.com/research/what-work-can-robots-do",
+      "published_at": "2026-09-30",
+      "topics": [
+        "robotics",
+        "labor",
+        "automation"
+      ],
+      "description": "An index examining robotic task capability and economic competitiveness.",
+      "source": "curated",
+      "dataset_ids": []
+    },
+    {
+      "id": "anthropic-project-swap",
+      "provider": "anthropic",
+      "title": "Project Swap: What happens when agents trade for us?",
+      "url": "https://www.anthropic.com/research/project-swap",
+      "published_at": "2026-09-24",
+      "topics": [
+        "agents",
+        "markets",
+        "experiment"
+      ],
+      "description": "Agent market-trading experiment exploring autonomous negotiation and exchange.",
+      "source": "curated",
+      "dataset_ids": []
+    },
+    {
+      "id": "anthropic-economic-scenarios",
+      "provider": "anthropic",
+      "title": "Scenarios for our economic future",
+      "url": "https://www.anthropic.com/institute/econ-scenarios",
+      "published_at": "2026-09-09",
+      "topics": [
+        "economics",
+        "forecasting",
+        "labor"
+      ],
+      "description": "Scenario modeling for possible AI-related growth and employment paths; not a forecast.",
+      "source": "curated",
+      "dataset_ids": []
     }
   ]
 }
