@@ -1,4 +1,5 @@
 name: Update research index
+
 on:
   schedule:
     - cron: "17 2 * * 1"
@@ -9,12 +10,15 @@ on:
       - 'scripts/update.py'
       - 'sources/registry.json'
       - '.github/workflows/update-research.yml'
+
 permissions:
   contents: write
   pull-requests: write
+
 concurrency:
   group: research-index
   cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -23,20 +27,71 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Check upstream sources
+
+      - name: Fetch official sources
+        id: fetch
         run: python scripts/update.py
-      - name: Validate metadata and tests
+
+      - name: Validate data and run tests
         run: |
           python scripts/validate.py
           python -m unittest discover -s tests -v
-      - name: Create review PR
+
+      - name: Create or update data-only PR
+        id: cpr
         uses: peter-evans/create-pull-request@v7
         with:
           branch: bot/research-refresh
           delete-branch: true
           title: "chore(data): refresh research and dataset metadata"
           commit-message: "chore(data): update upstream research metadata"
-          body: "Automated metadata diff. Verify new research, dates, taxonomy, licenses and dataset revisions before merging."
+          body: |
+            Automatically generated research and dataset metadata update.
+            In normal operation this PR is squash-merged after successful upstream checks
+            and offline validation. If source coverage is degraded, it remains open.
+            Do not treat catalog entries as independently verified findings.
           add-paths: |
             research/catalog.json
             data/manifests/**
+
+      - name: Automatically merge validated data-only PR
+        if: steps.cpr.outputs.pull-request-number != '' && steps.fetch.outputs.coverage_complete == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          set -euo pipefail
+
+          # Refuse to merge unrelated or manually modified PRs.
+          read -r base head < <(gh pr view "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" \
+            --json baseRefName,headRefName --jq '[.baseRefName, .headRefName] | @tsv')
+          if [[ "$base" != "main" || "$head" != "bot/research-refresh" ]]; then
+            echo "::error::Unexpected PR branches: $head -> $base"
+            exit 1
+          fi
+
+          files="$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER/files?per_page=100" \
+            --paginate --jq '.[].filename')"
+          if [[ -z "$files" ]]; then
+            echo "::error::PR has no changed files"
+            exit 1
+          fi
+          while IFS= read -r file; do
+            case "$file" in
+              research/catalog.json|data/manifests/*.json) ;;
+              *)
+                echo "::error::Refusing to merge unexpected file: $file"
+                exit 1
+                ;;
+            esac
+          done <<< "$files"
+
+          gh pr merge "$PR_NUMBER" --repo "$GITHUB_REPOSITORY" --squash --delete-branch
+          echo "Automatically squash-merged data update PR #$PR_NUMBER." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Explain degraded coverage
+        if: steps.cpr.outputs.pull-request-number != '' && steps.fetch.outputs.coverage_complete != 'true'
+        env:
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          echo "Data PR #$PR_NUMBER remains open because one or more upstream sources could not be checked." >> "$GITHUB_STEP_SUMMARY"
