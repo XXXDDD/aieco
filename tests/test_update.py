@@ -26,6 +26,7 @@ class CatalogTests(unittest.TestCase):
         rss = """<?xml version="1.0"?>
 <rss version="2.0"><channel>
 <item><title>AI and job productivity study</title><link>https://openai.com/index/jobs-productivity-study/</link><pubDate>Mon, 26 Oct 2026 10:00:00 GMT</pubDate><category>Research</category></item>
+<item><title>AI</title><link>https://openai.com/index/ai</link><category>Research</category></item>
 <item><title>Introducing a new model</title><link>https://openai.com/index/introducing-new-model</link><category>Product</category></item>
 <item><title>Examining AI adoption data</title><link>https://openai.com/index/ai-adoption-data</link><category>AI Adoption</category></item>
 <item><title>A company customer story</title><link>https://openai.com/index/customer-story</link><category>AI Adoption</category></item>
