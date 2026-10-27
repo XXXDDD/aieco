@@ -129,7 +129,7 @@ def discover_openai_rss(markup: str) -> list[dict]:
         title = " ".join((item.findtext("title") or "").split())
         url = canonical_url((item.findtext("link") or "").strip())
         category = (item.findtext("category") or "").strip()
-        if not permitted_research_url("openai", url) or not title:
+        if not permitted_research_url("openai", url) or len(title) < 8:
             continue
         if category.casefold() != "research" and not (
             category.casefold() == "ai adoption" and adoption_terms.search(title)
