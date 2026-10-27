@@ -3,6 +3,12 @@ on:
   schedule:
     - cron: "17 2 * * 1"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/update.py'
+      - 'sources/registry.json'
+      - '.github/workflows/update-research.yml'
 permissions:
   contents: write
   pull-requests: write

@@ -25,7 +25,7 @@ python -m unittest discover -s tests -v
 python scripts/update.py
 ```
 
-The updater needs internet access. GitHub Actions checks sources every Monday, and opens a PR only if tracked metadata changes. Run it manually from **Actions → Update research index → Run workflow**. Enable **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests** if your repository policy requires it.
+The updater needs internet access. GitHub Actions checks sources every Monday, and opens a PR only if tracked metadata changes. OpenAI research pages currently return HTTP 403 from GitHub-hosted runners; these sources will be **reported as inaccessible** rather than falsely marked current. Other successful source updates can still generate a PR; check the workflow's Summary section for degraded coverage. Run it manually from **Actions → Update research index → Run workflow**. Enable **Settings → Actions → General → Allow GitHub Actions to create and approve pull requests** if your repository policy requires it.
 
 ## Agent skill
 
