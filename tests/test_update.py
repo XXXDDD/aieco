@@ -106,6 +106,28 @@ class CatalogTests(unittest.TestCase):
             self.assertIn("degraded", summary)
             self.assertIn("did not verify freshness", summary)
 
+    def test_auto_merge_gate_requires_complete_coverage(self):
+        registry = {
+            "research_pages": [{"id": "openai-feed", "provider": "openai"}],
+            "datasets": [],
+        }
+        cases = [
+            ([], "true", 0),
+            (["openai-feed: HTTP Error 403: Forbidden"], "false", 0),
+            (["openai-feed: HTTP Error 500: Server Error"], "false", 1),
+        ]
+        for errors, expected, expected_exit in cases:
+            with self.subTest(errors=errors), tempfile.TemporaryDirectory() as temp:
+                path = Path(temp) / "out"
+                with patch.dict("os.environ", {"GITHUB_OUTPUT": str(path)}), \
+                     patch.object(update, "read_json", return_value=registry), \
+                     patch.object(update, "update_catalog", return_value=(0, errors)), \
+                     patch.object(update, "update_datasets", return_value=(0, [])), \
+                     patch.object(update, "write_github_summary"):
+                    self.assertEqual(update.main(), expected_exit)
+                self.assertEqual(path.read_text(encoding="utf-8").strip(),
+                                 "coverage_complete=" + expected)
+
     def test_project_catalog_is_valid(self):
         self.assertGreaterEqual(validate.validate(), 5)
 
