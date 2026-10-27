@@ -337,6 +337,10 @@ def main() -> int:
     for error in failures:
         print("ERROR: " + error, file=sys.stderr)
     write_github_summary(new, changed, warnings, failures)
+    output_path = os.environ.get("GITHUB_OUTPUT")
+    if output_path:
+        with open(output_path, "a", encoding="utf-8") as output:
+            output.write("coverage_complete=" + ("true" if not warnings and not failures else "false") + "\n")
     return 1 if failures else 0
 
 
