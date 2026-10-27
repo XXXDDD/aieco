@@ -2,18 +2,15 @@
   "schema_version": 1,
   "research_pages": [
     {
-      "id": "openai-signals",
+      "id": "openai-official-research-feed",
       "provider": "openai",
-      "url": "https://openai.com/signals/"
-    },
-    {
-      "id": "openai-research",
-      "provider": "openai",
-      "url": "https://openai.com/signals/research/"
+      "kind": "rss",
+      "url": "https://openai.com/news/rss.xml"
     },
     {
       "id": "anthropic-economics",
       "provider": "anthropic",
+      "kind": "html",
       "url": "https://www.anthropic.com/research/team/economics"
     }
   ],
@@ -21,10 +18,20 @@
     {
       "id": "openai-signals-v3",
       "provider": "openai",
-      "kind": "openai-links",
-      "url": "https://openai.com/signals/data-download/",
+      "kind": "cdn-head",
+      "url": "https://cdn.openai.com/signals/data-dictionary.pdf",
       "homepage": "https://openai.com/signals/data-download/",
-      "license": "CC-BY-4.0"
+      "license": "CC-BY-4.0",
+      "assets": [
+        {
+          "label": "Signals v3.0 CSV data",
+          "url": "https://cdn.openai.com/signals/data-download-csv.zip"
+        },
+        {
+          "label": "Signals v3.0 data dictionary",
+          "url": "https://cdn.openai.com/signals/data-dictionary.pdf"
+        }
+      ]
     },
     {
       "id": "anthropic-economic-index",
