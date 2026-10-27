@@ -38,11 +38,11 @@ jobs:
             except Exception as exc:
               print(url, type(exc).__name__, str(exc))
           import xml.etree.ElementTree as ET
-          rss = ET.fromstring(urlopen("https://openai.com/news/rss.xml", timeout=15).read(1500000))
+          rss = ET.fromstring(urlopen(Request("https://openai.com/news/rss.xml", headers={"User-Agent":"aieco-indexer/0.1 (+https://github.com/XXXDDD/aieco)"}), timeout=15).read(6000000))
           items = rss.findall(".//item")
           print("RSS total items:", len(items))
           for item in items[:12]:
             print("RSS ITEM:", {tag: item.findtext(tag) for tag in ("title","link","pubDate","category")})
-          site = ET.fromstring(urlopen("https://openai.com/sitemap.xml", timeout=15).read(1500000))
+          site = ET.fromstring(urlopen(Request("https://openai.com/sitemap.xml", headers={"User-Agent":"aieco-indexer/0.1 (+https://github.com/XXXDDD/aieco)"}), timeout=15).read(6000000))
           print("SITEMAP:", [(x.tag.rsplit("}",1)[-1],x.text) for el in list(site)[:10] for x in list(el)[:1]])
           PY
