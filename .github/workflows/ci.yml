@@ -45,4 +45,12 @@ jobs:
             print("RSS ITEM:", {tag: item.findtext(tag) for tag in ("title","link","pubDate","category")})
           site = ET.fromstring(urlopen(Request("https://openai.com/sitemap.xml", headers={"User-Agent":"aieco-indexer/0.1 (+https://github.com/XXXDDD/aieco)"}), timeout=15).read(6000000))
           print("SITEMAP:", [(x.tag.rsplit("}",1)[-1],x.text) for el in list(site)[:10] for x in list(el)[:1]])
+          print("SELECTED SITEMAPS:", [el.findtext("{http://www.sitemaps.org/schemas/sitemap/0.9}loc") for el in site if any(w in str(el.findtext("{http://www.sitemaps.org/schemas/sitemap/0.9}loc")).lower() for w in ("research","econom","signal","news"))])
+          for url in ["https://cdn.openai.com/signals/data-download-csv.zip","https://cdn.openai.com/signals/data-dictionary.pdf"]:
+            try:
+              req = Request(url, method="HEAD", headers={"User-Agent":"aieco-indexer/0.1 (+https://github.com/XXXDDD/aieco)"})
+              with urlopen(req,timeout=15) as resp:
+                print("CDN HEAD",url,resp.status,{k:v for k,v in resp.headers.items() if k.lower() in ("content-length","etag","last-modified","content-type")})
+            except Exception as exc:
+              print("CDN HEAD",url,type(exc).__name__,str(exc))
           PY
