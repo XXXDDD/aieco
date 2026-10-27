@@ -1,180 +1,2941 @@
 {
-  "schema_version": 1,
   "records": [
     {
+      "dataset_ids": [
+        "openai-signals-v3"
+      ],
+      "description": "OpenAI Signals v3.0: work-related ChatGPT usage across activities and countries.",
       "id": "openai-expanding-world-of-work",
       "provider": "openai",
-      "title": "ChatGPT’s expanding world of work",
-      "url": "https://openai.com/index/chatgpt-expanding-world-of-work/",
       "published_at": "2026-10-26",
+      "source": "curated",
+      "title": "ChatGPT’s expanding world of work",
       "topics": [
         "adoption",
         "labor",
         "work-activities"
       ],
-      "description": "OpenAI Signals v3.0: work-related ChatGPT usage across activities and countries.",
-      "source": "curated",
-      "dataset_ids": [
-        "openai-signals-v3"
-      ]
+      "url": "https://openai.com/index/chatgpt-expanding-world-of-work/"
     },
     {
+      "dataset_ids": [
+        "openai-signals-v3"
+      ],
+      "description": "Framework distinguishing automation risk, reorganization, demand growth and limited change.",
       "id": "openai-jobs-transition",
       "provider": "openai",
-      "title": "Modeling an AI jobs transition",
-      "url": "https://openai.com/index/modeling-ai-jobs-transition/",
       "published_at": "2026-04-25",
+      "source": "curated",
+      "title": "Modeling an AI jobs transition",
       "topics": [
         "labor",
         "automation",
         "employment"
       ],
-      "description": "Framework distinguishing automation risk, reorganization, demand growth and limited change.",
-      "source": "curated",
-      "dataset_ids": [
-        "openai-signals-v3"
-      ]
+      "url": "https://openai.com/index/modeling-ai-jobs-transition/"
     },
     {
+      "dataset_ids": [
+        "anthropic-economic-index"
+      ],
+      "description": "Observed exposure combines theoretical task capability and actual AI usage.",
       "id": "anthropic-labor-market-impacts",
       "provider": "anthropic",
-      "title": "Labor market impacts of AI: A new measure and early evidence",
-      "url": "https://www.anthropic.com/research/labor-market-impacts",
       "published_at": "2026-03-05",
+      "source": "curated",
+      "title": "Labor market impacts of AI: A new measure and early evidence",
       "topics": [
         "labor",
         "exposure",
         "employment"
       ],
-      "description": "Observed exposure combines theoretical task capability and actual AI usage.",
-      "source": "curated",
-      "dataset_ids": [
-        "anthropic-economic-index"
-      ]
+      "url": "https://www.anthropic.com/research/labor-market-impacts"
     },
     {
+      "dataset_ids": [
+        "anthropic-economic-index"
+      ],
+      "description": "Economic Index methodology and usage patterns across Claude products.",
       "id": "anthropic-cadences",
       "provider": "anthropic",
-      "title": "Anthropic Economic Index report: Cadences",
-      "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
       "published_at": "2026-06-26",
+      "source": "curated",
+      "title": "Anthropic Economic Index report: Cadences",
       "topics": [
         "adoption",
         "agents",
         "usage"
       ],
-      "description": "Economic Index methodology and usage patterns across Claude products.",
-      "source": "curated",
-      "dataset_ids": [
-        "anthropic-economic-index"
-      ]
+      "url": "https://www.anthropic.com/research/economic-index-june-2026-report"
     },
     {
+      "dataset_ids": [],
+      "description": "Anthropic's internal adoption and expectations research.",
       "id": "anthropic-frontier-expectations",
       "provider": "anthropic",
-      "title": "Working at the frontier shapes expectations for the future",
-      "url": "https://www.anthropic.com/research/expectations-for-the-future",
       "published_at": "2026-10-16",
+      "source": "curated",
+      "title": "Working at the frontier shapes expectations for the future",
       "topics": [
         "employment",
         "productivity",
         "expectations"
       ],
-      "description": "Anthropic's internal adoption and expectations research.",
-      "source": "curated",
-      "dataset_ids": []
+      "url": "https://www.anthropic.com/research/expectations-for-the-future"
     },
     {
+      "dataset_ids": [
+        "openai-signals-v3"
+      ],
+      "description": "OpenAI Signals analysis of ChatGPT usage depth, breadth and geographic adoption.",
       "id": "openai-global-adoption",
       "provider": "openai",
-      "title": "How ChatGPT adoption has expanded",
-      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded/",
       "published_at": "2026-06-30",
+      "source": "curated",
+      "title": "How ChatGPT adoption has expanded",
       "topics": [
         "adoption",
         "geography",
         "demographics"
       ],
-      "description": "OpenAI Signals analysis of ChatGPT usage depth, breadth and geographic adoption.",
-      "source": "curated",
-      "dataset_ids": [
-        "openai-signals-v3"
-      ]
+      "url": "https://openai.com/index/how-chatgpt-adoption-has-expanded/"
     },
     {
+      "dataset_ids": [],
+      "description": "Experiment on ChatGPT access and causal-reasoning training among students.",
       "id": "openai-education-rct",
       "provider": "openai",
-      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
-      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/",
       "published_at": "2026-08-27",
+      "source": "curated",
+      "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
       "topics": [
         "education",
         "productivity",
         "experiment"
       ],
-      "description": "Experiment on ChatGPT access and causal-reasoning training among students.",
-      "source": "curated",
-      "dataset_ids": []
+      "url": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training/"
     },
     {
+      "dataset_ids": [],
+      "description": "Analysis of ChatGPT use for planning, running and growing small businesses.",
       "id": "openai-small-business",
       "provider": "openai",
-      "title": "AI is becoming a first hire for small businesses",
-      "url": "https://openai.com/index/ai-first-hire-small-business/",
       "published_at": "2026-05-25",
+      "source": "curated",
+      "title": "AI is becoming a first hire for small businesses",
       "topics": [
         "entrepreneurship",
         "business",
         "adoption"
       ],
-      "description": "Analysis of ChatGPT use for planning, running and growing small businesses.",
-      "source": "curated",
-      "dataset_ids": []
+      "url": "https://openai.com/index/ai-first-hire-small-business/"
     },
     {
+      "dataset_ids": [],
+      "description": "An index examining robotic task capability and economic competitiveness.",
       "id": "anthropic-robotics-work",
       "provider": "anthropic",
-      "title": "Can we predict the jobs robots will do?",
-      "url": "https://www.anthropic.com/research/what-work-can-robots-do",
       "published_at": "2026-09-30",
+      "source": "curated",
+      "title": "Can we predict the jobs robots will do?",
       "topics": [
         "robotics",
         "labor",
         "automation"
       ],
-      "description": "An index examining robotic task capability and economic competitiveness.",
-      "source": "curated",
-      "dataset_ids": []
+      "url": "https://www.anthropic.com/research/what-work-can-robots-do"
     },
     {
+      "dataset_ids": [],
+      "description": "Agent market-trading experiment exploring autonomous negotiation and exchange.",
       "id": "anthropic-project-swap",
       "provider": "anthropic",
-      "title": "Project Swap: What happens when agents trade for us?",
-      "url": "https://www.anthropic.com/research/project-swap",
       "published_at": "2026-09-24",
+      "source": "curated",
+      "title": "Project Swap: What happens when agents trade for us?",
       "topics": [
         "agents",
         "markets",
         "experiment"
       ],
-      "description": "Agent market-trading experiment exploring autonomous negotiation and exchange.",
-      "source": "curated",
-      "dataset_ids": []
+      "url": "https://www.anthropic.com/research/project-swap"
     },
     {
+      "dataset_ids": [],
+      "description": "Scenario modeling for possible AI-related growth and employment paths; not a forecast.",
       "id": "anthropic-economic-scenarios",
       "provider": "anthropic",
-      "title": "Scenarios for our economic future",
-      "url": "https://www.anthropic.com/institute/econ-scenarios",
       "published_at": "2026-09-09",
+      "source": "curated",
+      "title": "Scenarios for our economic future",
       "topics": [
         "economics",
         "forecasting",
         "labor"
       ],
-      "description": "Scenario modeling for possible AI-related growth and employment paths; not a forecast.",
-      "source": "curated",
-      "dataset_ids": []
+      "url": "https://www.anthropic.com/institute/econ-scenarios"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-f1a4cfc83ebc",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "What 81,000 people told us about the economics of AI",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/81k-economics"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-f67896274fc0",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "The AI expectations gap",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/ai-expectations-gap"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-428f6ba6fc7b",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Anthropic Economic Index report: Economic primitives",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-99d3d029848c",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Anthropic Economic Index report: Uneven geographic and enterprise AI adoption",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/anthropic-economic-index-september-2025-report"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-a6ebb163a6c3",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Agentic coding and persistent returns to expertise",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/claude-code-expertise"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-4eb52a51fe3e",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Anthropic Economic Index: Tracking AI’s role in the US and global economy",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/economic-index-geography"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-490c7dfff243",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Anthropic Economic Index report: Learning curves",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/economic-index-march-2026-report"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-baf1413b738d",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Anthropic Economic Index: New building blocks for understanding AI use",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/economic-index-primitives"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-25420b1cbb81",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Announcing the Anthropic Economic Index Survey",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/economic-index-survey-announcement"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-968472e44aae",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Preparing for AI’s economic impact: exploring policy responses",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/economic-policy-responses"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-ac92bb3d5c09",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "How employment is changing at Anthropic",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/employment-at-anthropic"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-1274a8235cdb",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Estimating AI productivity gains from Claude conversations",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/estimating-productivity-gains"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-8bdd4935b0b1",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "How Australia uses Claude: Findings from the Anthropic Economic Index",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/how-australia-uses-claude"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-0e537c3c4d4b",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "How Canada uses Claude: Findings from the Anthropic Economic Index",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/how-canada-uses-claude"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-5cdc927c5220",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Anthropic Economic Index: AI’s impact on software development",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/impact-software-development"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-86ea0b00c6f9",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "India Country Brief: The Anthropic Economic Index",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/india-brief-economic-index"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-f2323421e5e5",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Reviewing the evidence on worker retraining programs",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-75f26884ae62",
+      "provider": "openai",
+      "published_at": "2016-11-11",
+      "source": "discovered:openai-official-research-feed",
+      "title": "A connection between generative adversarial networks, inverse reinforcement learning, and energy-based models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/a-connection-between-generative-adversarial-networks-inverse-reinforcement-learning-and-energy-based-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-6ba9a13e7150",
+      "provider": "openai",
+      "published_at": "2024-06-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "A Holistic Approach to Undesired Content Detection in the Real World",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/a-holistic-approach-to-undesired-content-detection-in-the-real-world"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-3f703ff65ec6",
+      "provider": "openai",
+      "published_at": "2025-12-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Measuring AI’s capability to accelerate biological research",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/accelerating-biological-research-in-the-wet-lab"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f484173e2976",
+      "provider": "openai",
+      "published_at": "2025-11-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Early experiments in accelerating science with GPT-5",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/accelerating-science-gpt-5"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-a93dc3ad8dab",
+      "provider": "openai",
+      "published_at": "2024-11-21",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Advancing red teaming with people and AI",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/advancing-red-teaming-with-people-and-ai"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-55904b2e2ce7",
+      "provider": "openai",
+      "published_at": "2025-03-21",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Early methods for studying affective use and emotional well-being on ChatGPT",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/affective-use-study"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-6a0c4b2b4d23",
+      "provider": "openai",
+      "published_at": "2018-05-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "AI and compute",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/ai-and-compute"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-3e1e4e4eb6ba",
+      "provider": "openai",
+      "published_at": "2020-05-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "AI and efficiency",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/ai-and-efficiency"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-5ff2f715f1e6",
+      "provider": "openai",
+      "published_at": "2026-06-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "A near-autonomous AI chemist improves a challenging reaction in medicinal chemistry",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/ai-chemist-improves-reaction"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-81a665efcb32",
+      "provider": "openai",
+      "published_at": "2017-10-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Asymmetric actor critic for image-based robot learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/asymmetric-actor-critic-for-image-based-robot-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-96322b294d06",
+      "provider": "openai",
+      "published_at": "2017-07-27",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Better exploration with parameter noise",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/better-exploration-with-parameter-noise"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-1b5948ab0241",
+      "provider": "openai",
+      "published_at": "2019-02-14",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Better language models and their implications",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/better-language-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f0d270fbca2e",
+      "provider": "openai",
+      "published_at": "2017-12-06",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Block-sparse GPU kernels",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/block-sparse-gpu-kernels"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-65ffab8a128a",
+      "provider": "openai",
+      "published_at": "2024-01-31",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Building an early warning system for LLM-aided biological threat creation",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/building-an-early-warning-system-for-llm-aided-biological-threat-creation"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-8eb6001a836a",
+      "provider": "openai",
+      "published_at": "2026-10-26",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Working with academic communities to build scientific understanding",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c3ab33c62226",
+      "provider": "openai",
+      "published_at": "2026-06-04",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Dreaming: Better memory for a more helpful ChatGPT",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/chatgpt-memory-dreaming"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-bc37d5969edc",
+      "provider": "openai",
+      "published_at": "2021-01-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "CLIP: Connecting text and images",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/clip"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-581dd87d0e73",
+      "provider": "openai",
+      "published_at": "2017-10-11",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Competitive self-play",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/competitive-self-play"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-8eb7839a3c9c",
+      "provider": "openai",
+      "published_at": "2019-02-04",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Computational limitations in robust classification and win-win results",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/computational-limitations-in-robust-classification-and-win-win-results"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-74eeb7c9fb20",
+      "provider": "openai",
+      "published_at": "2025-01-23",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Computer-Using Agent",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/computer-using-agent"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c24d318bbbd8",
+      "provider": "openai",
+      "published_at": "2024-06-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Consistency Models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/consistency-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f14c51ae873c",
+      "provider": "openai",
+      "published_at": "2021-01-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "DALL·E: Creating images from text",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/dall-e"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-cf1134280999",
+      "provider": "openai",
+      "published_at": "2022-06-28",
+      "source": "discovered:openai-official-research-feed",
+      "title": "DALL·E 2 pre-training mitigations",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/dall-e-2-pre-training-mitigations"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-19b78ea11083",
+      "provider": "openai",
+      "published_at": "2019-12-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Deep double descent",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/deep-double-descent"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-b80206eeacbe",
+      "provider": "openai",
+      "published_at": "2025-10-09",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Defining and evaluating political bias in LLMs",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/defining-and-evaluating-political-bias-in-llms"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-64a543805735",
+      "provider": "openai",
+      "published_at": "2023-05-25",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Democratic inputs to AI",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/democratic-inputs-to-ai"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c000018ba1f0",
+      "provider": "openai",
+      "published_at": "2026-06-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Predicting model behavior before release by simulating deployment",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/deployment-simulation"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-7f5353232f4b",
+      "provider": "openai",
+      "published_at": "2018-02-07",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Discovering types for entity disambiguation",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/discovering-types-for-entity-disambiguation"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-740d039f3421",
+      "provider": "openai",
+      "published_at": "2017-10-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Domain randomization and generative models for robotic grasping",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/domain-randomization-and-generative-models-for-robotic-grasping"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2c89cede3d83",
+      "provider": "openai",
+      "published_at": "2019-12-13",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Dota 2 with large scale deep reinforcement learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/dota-2-with-large-scale-deep-reinforcement-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-212f765399d5",
+      "provider": "openai",
+      "published_at": "2022-03-03",
+      "source": "discovered:openai-official-research-feed",
+      "title": "A research agenda for assessing the economic impacts of code generation models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/economic-impacts-research"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-54ba9a907ae8",
+      "provider": "openai",
+      "published_at": "2022-07-28",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Efficient training of language models to fill in the middle",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/efficient-training-of-language-models-to-fill-in-the-middle"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-7f42d0024562",
+      "provider": "openai",
+      "published_at": "2017-03-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Emergence of grounded compositional language in multi-agent populations",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/emergence-of-grounded-compositional-language-in-multi-agent-populations"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-bb4559fb85ee",
+      "provider": "openai",
+      "published_at": "2019-09-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Emergent tool use from multi-agent interaction",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/emergent-tool-use"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-a193572aa133",
+      "provider": "openai",
+      "published_at": "2019-03-21",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Implicit generation and generalization methods for energy-based models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/energy-based-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-0ec1aa4d25c6",
+      "provider": "openai",
+      "published_at": "2017-04-21",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Equivalence between policy gradients and soft Q-learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/equivalence-between-policy-gradients-and-soft-q-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-43cb7efd66ff",
+      "provider": "openai",
+      "published_at": "2025-11-19",
+      "source": "discovered:openai-official-research-feed",
+      "title": "How evals drive the next chapter in AI for businesses",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/evals-drive-next-chapter-of-ai"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-454ed7542563",
+      "provider": "openai",
+      "published_at": "2025-12-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Evaluating chain-of-thought monitorability",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/evaluating-chain-of-thought-monitorability"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-35471ebc6894",
+      "provider": "openai",
+      "published_at": "2024-10-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Evaluating fairness in ChatGPT",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/evaluating-fairness-in-chatgpt"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-47d0c87b08f0",
+      "provider": "openai",
+      "published_at": "2021-07-07",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Evaluating large language models trained on code",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/evaluating-large-language-models-trained-on-code"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d5d36adbb328",
+      "provider": "openai",
+      "published_at": "2017-03-24",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Evolution strategies as a scalable alternative to reinforcement learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/evolution-strategies"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-b6096c30c708",
+      "provider": "openai",
+      "published_at": "2022-06-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Evolution through large models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/evolution-through-large-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-49bd957aa3cd",
+      "provider": "openai",
+      "published_at": "2018-04-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Evolved Policy Gradients",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/evolved-policy-gradients"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-5185c2677d36",
+      "provider": "openai",
+      "published_at": "2016-11-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "#Exploration: A study of count-based exploration for deep reinforcement learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/exploration"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-5bd932ab7f49",
+      "provider": "openai",
+      "published_at": "2026-03-04",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Extending single-minus amplitudes to gravitons",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/extending-single-minus-amplitudes-to-gravitons"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-9234474c676c",
+      "provider": "openai",
+      "published_at": "2016-11-02",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Extensions and limitations of the neural GPU",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/extensions-and-limitations-of-the-neural-gpu"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d58703e87ddb",
+      "provider": "openai",
+      "published_at": "2024-06-06",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Extracting Concepts from GPT-4",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/extracting-concepts-from-gpt-4"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-1f51b604f32d",
+      "provider": "openai",
+      "published_at": "2017-06-28",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Faster physics in Python",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/faster-physics-in-python"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-bf0161f536fd",
+      "provider": "openai",
+      "published_at": "2018-10-02",
+      "source": "discovered:openai-official-research-feed",
+      "title": "FFJORD: Free-form continuous dynamics for scalable reversible generative models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/ffjord"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-feae6511a0a2",
+      "provider": "openai",
+      "published_at": "2026-02-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Our First Proof submissions",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/first-proof-submissions"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-89ed49981586",
+      "provider": "openai",
+      "published_at": "2022-02-02",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Solving (some) formal math olympiad problems",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/formal-math"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-1b288e83884e",
+      "provider": "openai",
+      "published_at": "2025-12-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Evaluating AI’s ability to perform scientific research tasks",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/frontierscience"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-6a26561219cf",
+      "provider": "openai",
+      "published_at": "2018-06-02",
+      "source": "discovered:openai-official-research-feed",
+      "title": "GamePad: A learning environment for theorem proving",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gamepad"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-698b1890fdd1",
+      "provider": "openai",
+      "published_at": "2017-08-03",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Gathering human feedback",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gathering-human-feedback"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2d6c85bd3e86",
+      "provider": "openai",
+      "published_at": "2017-10-19",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Generalizing from simulation",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/generalizing-from-simulation"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-88e99ce4204e",
+      "provider": "openai",
+      "published_at": "2020-09-07",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Generative language modeling for automated theorem proving",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/generative-language-modeling-for-automated-theorem-proving"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-92d63a138081",
+      "provider": "openai",
+      "published_at": "2016-06-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Generative models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/generative-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-745cade4a69f",
+      "provider": "openai",
+      "published_at": "2018-07-09",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Glow: Better reversible generative models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/glow"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-4ec028b44ef3",
+      "provider": "openai",
+      "published_at": "2018-04-10",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Gotta Learn Fast: A new benchmark for generalization in RL",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gotta-learn-fast"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-31066a8ed5c3",
+      "provider": "openai",
+      "published_at": "2019-11-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "GPT-2: 1.5B release",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gpt-2-1-5b-release"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-aec2fcecd95e",
+      "provider": "openai",
+      "published_at": "2019-08-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "GPT-2: 6-month follow-up",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gpt-2-6-month-follow-up"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-031c86eaad2b",
+      "provider": "openai",
+      "published_at": "2024-07-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "GPT-4o mini: advancing cost-efficient intelligence",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-aec434a838fa",
+      "provider": "openai",
+      "published_at": "2026-02-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "GPT-5 lowers the cost of cell-free protein synthesis",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-039a4975e102",
+      "provider": "openai",
+      "published_at": "2026-09-03",
+      "source": "discovered:openai-official-research-feed",
+      "title": "GPT-6 Astra: A new generation of intelligence",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gpt-6-astra"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-b66b937dc53f",
+      "provider": "openai",
+      "published_at": "2023-03-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "GPTs are GPTs: An early look at the labor market impact potential of large language models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gpts-are-gpts"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-31ad9adfb05a",
+      "provider": "openai",
+      "published_at": "2018-05-25",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Gym Retro",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/gym-retro"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2d3a533e91db",
+      "provider": "openai",
+      "published_at": "2024-05-13",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Hello GPT-4o",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/hello-gpt-4o"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2c38d2f354fa",
+      "provider": "openai",
+      "published_at": "2022-04-13",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Hierarchical text-conditional image generation with CLIP latents",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/hierarchical-text-conditional-image-generation-with-clip-latents"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c1af6b88bb0c",
+      "provider": "openai",
+      "published_at": "2017-07-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Hindsight Experience Replay",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/hindsight-experience-replay"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-55cf833bc7db",
+      "provider": "openai",
+      "published_at": "2018-12-14",
+      "source": "discovered:openai-official-research-feed",
+      "title": "How AI training scales",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/how-ai-training-scales"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f45c751a8120",
+      "provider": "openai",
+      "published_at": "2025-12-03",
+      "source": "discovered:openai-official-research-feed",
+      "title": "How confessions can keep language models honest",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/how-confessions-can-keep-language-models-honest"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-bc32444a81aa",
+      "provider": "openai",
+      "published_at": "2025-09-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "How people are using ChatGPT",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/how-people-are-using-chatgpt"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-265c6a0134ab",
+      "provider": "openai",
+      "published_at": "2026-07-29",
+      "source": "discovered:openai-official-research-feed",
+      "title": "How enabling two settings tripled our scores on the ARC-AGI-3 benchmark",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d46ff01d5c8d",
+      "provider": "openai",
+      "published_at": "2020-06-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Image GPT",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/image-gpt"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-9f11083efd0a",
+      "provider": "openai",
+      "published_at": "2024-06-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Improved Techniques for Training Consistency Models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/improved-techniques-for-training-consistency-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-57da868082bd",
+      "provider": "openai",
+      "published_at": "2018-03-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Improving GANs using optimal transport",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/improving-gans-using-optimal-transport"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-b6a5fdb87e9f",
+      "provider": "openai",
+      "published_at": "2023-05-31",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Improving mathematical reasoning with process supervision",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/improving-mathematical-reasoning-with-process-supervision"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-dcb04574301f",
+      "provider": "openai",
+      "published_at": "2024-07-24",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Improving Model Safety Behavior with Rule-Based Rewards",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/improving-model-safety-behavior-with-rule-based-rewards"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-a77a394cc7a9",
+      "provider": "openai",
+      "published_at": "2020-04-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Improving verifiability in AI development",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/improving-verifiability"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-5eec2d002d2e",
+      "provider": "openai",
+      "published_at": "2016-08-29",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Infrastructure for deep learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/infrastructure-for-deep-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d82bfc8fbf3b",
+      "provider": "openai",
+      "published_at": "2018-02-26",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Ingredients for robotics research",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/ingredients-for-robotics-research"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-18b7ee4fe5e4",
+      "provider": "openai",
+      "published_at": "2026-03-10",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Improving instruction hierarchy in frontier LLMs",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/instruction-hierarchy-challenge"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-be84f3d01add",
+      "provider": "openai",
+      "published_at": "2017-11-02",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Interpretable and pedagogical examples",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/interpretable-and-pedagogical-examples"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-74460ec29c9b",
+      "provider": "openai",
+      "published_at": "2018-02-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Interpretable machine learning through teaching",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/interpretable-machine-learning-through-teaching"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-e0a00b60e015",
+      "provider": "openai",
+      "published_at": "2025-02-02",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing deep research",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-deep-research"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-55bc17d8de5d",
+      "provider": "openai",
+      "published_at": "2026-02-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing EVMbench",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-evmbench"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-0b8dc2473cab",
+      "provider": "openai",
+      "published_at": "2026-06-30",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing GeneBench-Pro",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-genebench-pro"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-078f0d540d88",
+      "provider": "openai",
+      "published_at": "2026-04-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing GPT-Rosalind for life sciences research",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-rosalind"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f688037bba7d",
+      "provider": "openai",
+      "published_at": "2025-11-03",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing IndQA",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-indqa"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-381e7f583722",
+      "provider": "openai",
+      "published_at": "2026-06-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing LifeSciBench",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-life-sci-bench"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-3efc4342b784",
+      "provider": "openai",
+      "published_at": "2026-04-22",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing OpenAI Privacy Filter",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-openai-privacy-filter"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-e92e95daf8e0",
+      "provider": "openai",
+      "published_at": "2024-10-30",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing SimpleQA",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-simpleqa"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-10b59b402b80",
+      "provider": "openai",
+      "published_at": "2024-08-13",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing SWE-bench Verified",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-swe-bench-verified"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-39ce611a50f8",
+      "provider": "openai",
+      "published_at": "2026-03-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing the Adoption news channel",
+      "topics": [
+        "adoption"
+      ],
+      "url": "https://openai.com/index/introducing-the-adoption-news-channel"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-32165ee6af89",
+      "provider": "openai",
+      "published_at": "2026-10-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-8f27ffb5bc66",
+      "provider": "openai",
+      "published_at": "2020-05-28",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Language models are few-shot learners",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/language-models-are-few-shot-learners"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-51bd36a671fe",
+      "provider": "openai",
+      "published_at": "2018-08-13",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Large-scale study of curiosity-driven learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/large-scale-study-of-curiosity-driven-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-3c2715ba8c64",
+      "provider": "openai",
+      "published_at": "2017-10-26",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning a hierarchy",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-a-hierarchy"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-32d654a60eb0",
+      "provider": "openai",
+      "published_at": "2018-11-07",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning concepts with energy functions",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-concepts-with-energy-functions"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-afb3f994b65f",
+      "provider": "openai",
+      "published_at": "2018-07-30",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning dexterity",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-dexterity"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f2da50172fdb",
+      "provider": "openai",
+      "published_at": "2018-07-04",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning Montezuma’s Revenge from a single demonstration",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-montezumas-revenge-from-a-single-demonstration"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-ecdd1d648f31",
+      "provider": "openai",
+      "published_at": "2018-06-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning policy representations in multiagent systems",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-policy-representations-in-multiagent-systems"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-642755945311",
+      "provider": "openai",
+      "published_at": "2017-12-04",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning sparse neural networks through L₀ regularization",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-sparse-neural-networks-through-l0-regularization"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-fc3184f92101",
+      "provider": "openai",
+      "published_at": "2017-03-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning to communicate",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-to-communicate"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-859febdd36b4",
+      "provider": "openai",
+      "published_at": "2017-06-08",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning to cooperate, compete, and communicate",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-to-cooperate-compete-and-communicate"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-22f524cf064d",
+      "provider": "openai",
+      "published_at": "2017-09-14",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning to model other minds",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-to-model-other-minds"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d1359f03b307",
+      "provider": "openai",
+      "published_at": "2024-09-12",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning to reason with LLMs",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-to-reason-with-llms"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-df4bf285848c",
+      "provider": "openai",
+      "published_at": "2017-09-13",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning with opponent-learning awareness",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/learning-with-opponent-learning-awareness"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-6b89bea3012e",
+      "provider": "openai",
+      "published_at": "2017-10-11",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Meta-learning for wrestling",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/meta-learning-for-wrestling"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-6e6e5524f81a",
+      "provider": "openai",
+      "published_at": "2020-04-14",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI Microscope",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/microscope"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c3a08c57269d",
+      "provider": "openai",
+      "published_at": "2024-10-10",
+      "source": "discovered:openai-official-research-feed",
+      "title": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/mle-bench"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-1c93d6c1c725",
+      "provider": "openai",
+      "published_at": "2026-05-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f3899afd4d6a",
+      "provider": "openai",
+      "published_at": "2026-09-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Our framework for reporting model misalignment",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/model-misalignment-reporting-framework"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-7e4bda609cfe",
+      "provider": "openai",
+      "published_at": "2017-08-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "More on Dota 2",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/more-on-dota-2"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-00023fa6b69f",
+      "provider": "openai",
+      "published_at": "2018-02-26",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Multi-Goal Reinforcement Learning: Challenging robotics environments and request for research",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/multi-goal-reinforcement-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-93d6498f6233",
+      "provider": "openai",
+      "published_at": "2021-03-04",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Multimodal neurons in artificial neural networks",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/multimodal-neurons"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2c827cba158d",
+      "provider": "openai",
+      "published_at": "2026-09-08",
+      "source": "discovered:openai-official-research-feed",
+      "title": "On the Navier–Stokes Millennium Prize Problem",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/navier-stokes-solution"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-5543eae6f599",
+      "provider": "openai",
+      "published_at": "2019-03-04",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Neural MMO: A massively multiagent game environment",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/neural-mmo"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-407f7c69ffbc",
+      "provider": "openai",
+      "published_at": "2026-02-13",
+      "source": "discovered:openai-official-research-feed",
+      "title": "GPT-5.2 derives a new result in theoretical physics",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/new-result-theoretical-physics"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-994b9539f355",
+      "provider": "openai",
+      "published_at": "2017-09-29",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Nonlinear computation in deep linear networks",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/nonlinear-computation-in-deep-linear-networks"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-8fe8674e0195",
+      "provider": "openai",
+      "published_at": "2025-01-31",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI o3-mini System Card",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/o3-mini-system-card"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d505c1fa06f7",
+      "provider": "openai",
+      "published_at": "2018-03-08",
+      "source": "discovered:openai-official-research-feed",
+      "title": "On first-order meta-learning algorithms",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/on-first-order-meta-learning-algorithms"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-448ab2e5dc1c",
+      "provider": "openai",
+      "published_at": "2016-11-14",
+      "source": "discovered:openai-official-research-feed",
+      "title": "On the quantitative analysis of decoder-based generative models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/on-the-quantitative-analysis-of-decoder-based-generative-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-cb1bd737766f",
+      "provider": "openai",
+      "published_at": "2017-03-21",
+      "source": "discovered:openai-official-research-feed",
+      "title": "One-shot imitation learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/one-shot-imitation-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-4fb73cf59fb2",
+      "provider": "openai",
+      "published_at": "2024-07-10",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI and Los Alamos National Laboratory announce research partnership",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-and-los-alamos-national-laboratory-work-together"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-7d4417b6f1fa",
+      "provider": "openai",
+      "published_at": "2017-08-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI Baselines: ACKTR & A2C",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-baselines-acktr-a2c"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-e9f7d2174d9e",
+      "provider": "openai",
+      "published_at": "2017-05-24",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI Baselines: DQN",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-baselines-dqn"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-9ab874ca8944",
+      "provider": "openai",
+      "published_at": "2017-07-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Proximal Policy Optimization",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-baselines-ppo"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-881e79a7db84",
+      "provider": "openai",
+      "published_at": "2018-06-25",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI Five",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-five"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f7475741716d",
+      "provider": "openai",
+      "published_at": "2018-08-06",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI Five Benchmark: Results",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-five-benchmark-results"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-ee157763b4c2",
+      "provider": "openai",
+      "published_at": "2019-04-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI Five defeats Dota 2 world champions",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-five-defeats-dota-2-world-champions"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c33fb9b7adb1",
+      "provider": "openai",
+      "published_at": "2016-04-27",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI Gym Beta",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-gym-beta"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-6a9179dfe54e",
+      "provider": "openai",
+      "published_at": "2024-09-12",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI o1-mini",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-dcf8ab338d73",
+      "provider": "openai",
+      "published_at": "2024-12-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI o1 System Card",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-o1-system-card"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-cd0416914af5",
+      "provider": "openai",
+      "published_at": "2025-01-31",
+      "source": "discovered:openai-official-research-feed",
+      "title": "OpenAI o3-mini",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/openai-o3-mini"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-263c2043f1c3",
+      "provider": "openai",
+      "published_at": "2026-03-25",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Inside our approach to the Model Spec",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/our-approach-to-the-model-spec"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-54f60ca8fca3",
+      "provider": "openai",
+      "published_at": "2017-01-19",
+      "source": "discovered:openai-official-research-feed",
+      "title": "PixelCNN++: Improving the PixelCNN with discretized logistic mixture likelihood and other modifications",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/pixelcnn-plus-plus"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-766b5a24063f",
+      "provider": "openai",
+      "published_at": "2018-11-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Plan online, learn offline: Efficient learning and exploration via model-based control",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/plan-online-learn-offline"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-28adad6ac48b",
+      "provider": "openai",
+      "published_at": "2022-12-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Point-E: A system for generating 3D point clouds from complex prompts",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/point-e"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-5edfbdd1919b",
+      "provider": "openai",
+      "published_at": "2017-03-12",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Prediction and control with temporal segment models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/prediction-and-control-with-temporal-segment-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2f2d250f7b2e",
+      "provider": "openai",
+      "published_at": "2019-12-03",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Procgen Benchmark",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/procgen-benchmark"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-7d4217e43b69",
+      "provider": "openai",
+      "published_at": "2024-07-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Prover-Verifier Games improve legibility of language model outputs",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/prover-verifier-games-improve-legibility"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-8c8b67d910ad",
+      "provider": "openai",
+      "published_at": "2018-12-06",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Quantifying generalization in reinforcement learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/quantifying-generalization-in-reinforcement-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-287a6bf67154",
+      "provider": "openai",
+      "published_at": "2026-03-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Reasoning models struggle to control their chains of thought, and that’s good",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/reasoning-models-chain-of-thought-controllability"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-586f20cf7e17",
+      "provider": "openai",
+      "published_at": "2018-10-31",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Reinforcement learning with prediction-based rewards",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/reinforcement-learning-with-prediction-based-rewards"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-056a847a80e1",
+      "provider": "openai",
+      "published_at": "2018-03-07",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Reptile: A scalable meta-learning algorithm",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/reptile"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c105ed6e84d9",
+      "provider": "openai",
+      "published_at": "2018-01-31",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Requests for Research 2.0",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/requests-for-research-2"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-3784d7aba971",
+      "provider": "openai",
+      "published_at": "2026-09-06",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Research acceleration: The view inside OpenAI",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/research-acceleration-view-inside-openai"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-acd6abaea30b",
+      "provider": "openai",
+      "published_at": "2018-04-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Retro Contest",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/retro-contest"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-04a283baef83",
+      "provider": "openai",
+      "published_at": "2018-06-22",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Retro Contest: Results",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/retro-contest-results"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-ee30ed958850",
+      "provider": "openai",
+      "published_at": "2016-11-09",
+      "source": "discovered:openai-official-research-feed",
+      "title": "RL²: Fast reinforcement learning via slow reinforcement learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/rl2"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d47075c8df33",
+      "provider": "openai",
+      "published_at": "2017-05-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Roboschool",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/roboschool"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2cdfd9c283a5",
+      "provider": "openai",
+      "published_at": "2017-05-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Robots that learn",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/robots-that-learn"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-0ea53cd481f0",
+      "provider": "openai",
+      "published_at": "2017-07-17",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Robust adversarial inputs",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/robust-adversarial-inputs"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-4c9c2f788cfe",
+      "provider": "openai",
+      "published_at": "2018-01-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Scaling Kubernetes to 2,500 nodes",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/scaling-kubernetes-to-2500-nodes"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-0b8a27d6cb1c",
+      "provider": "openai",
+      "published_at": "2021-01-25",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Scaling Kubernetes to 7,500 nodes",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/scaling-kubernetes-to-7500-nodes"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-bd2a7f12ec03",
+      "provider": "openai",
+      "published_at": "2020-01-23",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Scaling laws for neural language models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/scaling-laws-for-neural-language-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-1a032a768300",
+      "provider": "openai",
+      "published_at": "2022-10-19",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Scaling laws for reward model overoptimization",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/scaling-laws-for-reward-model-overoptimization"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-e9167e656930",
+      "provider": "openai",
+      "published_at": "2026-07-08",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Separating signal from noise in coding evaluations",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-00427e47df5e",
+      "provider": "openai",
+      "published_at": "2026-10-06",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Sharing AI progress in mathematics",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-cafc87444fd3",
+      "provider": "openai",
+      "published_at": "2017-10-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Sim-to-real transfer of robotic control with dynamics randomization",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/sim-to-real-transfer-of-robotic-control-with-dynamics-randomization"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-48d4ba4c85a1",
+      "provider": "openai",
+      "published_at": "2024-10-23",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Simplifying, stabilizing, and scaling continuous-time consistency models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-34f845c1e710",
+      "provider": "openai",
+      "published_at": "2021-10-29",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Solving math word problems",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/solving-math-word-problems"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-69dcd4141a73",
+      "provider": "openai",
+      "published_at": "2019-10-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Solving Rubik’s Cube with a robot hand",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/solving-rubiks-cube"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d0e669004c4c",
+      "provider": "openai",
+      "published_at": "2018-03-03",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Some considerations on learning to explore via meta-reinforcement learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/some-considerations-on-learning-to-explore-via-meta-reinforcement-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-661a3476d3d5",
+      "provider": "openai",
+      "published_at": "2025-09-30",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Sora 2 is here",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/sora-2"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-99e102be9e17",
+      "provider": "openai",
+      "published_at": "2017-04-01",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Spam detection in the physical world",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/spam-detection-in-the-physical-world"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-288dc1f2b785",
+      "provider": "openai",
+      "published_at": "2019-04-23",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Generative modeling with sparse transformers",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/sparse-transformer"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-da2451f0c1b3",
+      "provider": "openai",
+      "published_at": "2018-11-08",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Spinning Up in Deep RL",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/spinning-up-in-deep-rl"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-78ee2f7e35fb",
+      "provider": "openai",
+      "published_at": "2017-04-10",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Stochastic Neural Networks for hierarchical reinforcement learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/stochastic-neural-networks-for-hierarchical-reinforcement-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-27094283cc50",
+      "provider": "openai",
+      "published_at": "2017-07-01",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Teacher–student curriculum learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/teacher-student-curriculum-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-a4a912d18824",
+      "provider": "openai",
+      "published_at": "2022-05-28",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Teaching models to express their uncertainty in words",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/teaching-models-to-express-their-uncertainty-in-words"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-4f4c5c964bce",
+      "provider": "openai",
+      "published_at": "2022-06-09",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Techniques for training large neural networks",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/techniques-for-training-large-neural-networks"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d3cbea351a46",
+      "provider": "openai",
+      "published_at": "2022-01-24",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Text and code embeddings by contrastive pre-training",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/text-and-code-embeddings-by-contrastive-pre-training"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-7d089e2d1180",
+      "provider": "openai",
+      "published_at": "2024-04-19",
+      "source": "discovered:openai-official-research-feed",
+      "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/the-instruction-hierarchy"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-a626622dc4dd",
+      "provider": "openai",
+      "published_at": "2018-08-23",
+      "source": "discovered:openai-official-research-feed",
+      "title": "The International 2018: Results",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/the-international-2018-results"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f2c27a92d0c0",
+      "provider": "openai",
+      "published_at": "2017-03-06",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Third-person imitation learning",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/third-person-imitation-learning"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f4b16ea1ae46",
+      "provider": "openai",
+      "published_at": "2025-01-22",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Trading inference-time compute for adversarial robustness",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/trading-inference-time-compute-for-adversarial-robustness"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-e0cf1cef8809",
+      "provider": "openai",
+      "published_at": "2016-10-11",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Transfer from simulation to real world through learning deep inverse dynamics model",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/transfer-from-simulation-to-real-world-through-learning-deep-inverse-dynamics-model"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-03e8feb802d3",
+      "provider": "openai",
+      "published_at": "2021-07-28",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing Triton: Open-source GPU programming for neural networks",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/triton"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c16f4ae139bf",
+      "provider": "openai",
+      "published_at": "2021-09-08",
+      "source": "discovered:openai-official-research-feed",
+      "title": "TruthfulQA: Measuring how models mimic human falsehoods",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/truthfulqa"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-b4a0b823929e",
+      "provider": "openai",
+      "published_at": "2017-06-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "UCB exploration via Q-ensembles",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/ucb-exploration-via-q-ensembles"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-1285c175b36f",
+      "provider": "openai",
+      "published_at": "2025-11-13",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Understanding neural networks through sparse circuits",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/understanding-neural-networks-through-sparse-circuits"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-4748993efd3b",
+      "provider": "openai",
+      "published_at": "2021-02-04",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Understanding the capabilities, limitations, and societal impact of large language models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/understanding-the-capabilities-limitations-and-societal-impact-of-large-language-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-50e210ee0288",
+      "provider": "openai",
+      "published_at": "2024-05-07",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Understanding the source of what we see and hear online",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d346a1aa6260",
+      "provider": "openai",
+      "published_at": "2016-12-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Universe",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/universe"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-5dc883adf998",
+      "provider": "openai",
+      "published_at": "2017-04-06",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Unsupervised sentiment neuron",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/unsupervised-sentiment-neuron"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-f8c36640d772",
+      "provider": "openai",
+      "published_at": "2018-03-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Variance reduction for policy gradient with action-dependent factorized baselines",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/variance-reduction-for-policy-gradient-with-action-dependent-factorized-baselines"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-72d654a4e6e8",
+      "provider": "openai",
+      "published_at": "2016-11-08",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Variational lossy autoencoder",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/variational-lossy-autoencoder"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-edebd9bf64b1",
+      "provider": "openai",
+      "published_at": "2018-07-26",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Variational option discovery algorithms",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/variational-option-discovery-algorithms"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-0fe343211040",
+      "provider": "openai",
+      "published_at": "2024-02-15",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Video generation models as world simulators",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/video-generation-models-as-world-simulators"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-4e33c3e8216e",
+      "provider": "openai",
+      "published_at": "2022-06-23",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Learning to play Minecraft with Video PreTraining",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/vpt"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-bb1464aabad9",
+      "provider": "openai",
+      "published_at": "2021-12-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "WebGPT: Improving the factual accuracy of language models through web browsing",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/webgpt"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-1faeb6d01263",
+      "provider": "openai",
+      "published_at": "2016-02-25",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Weight normalization: A simple reparameterization to accelerate training of deep neural networks",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/weight-normalization"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-fd797e93058c",
+      "provider": "openai",
+      "published_at": "2026-05-12",
+      "source": "discovered:openai-official-research-feed",
+      "title": "What Parameter Golf taught us about AI-assisted research",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/what-parameter-golf-taught-us"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2b132b9f05ef",
+      "provider": "openai",
+      "published_at": "2022-09-21",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Introducing Whisper",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/whisper"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-39305e45dcf4",
+      "provider": "openai",
+      "published_at": "2025-09-05",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Why language models hallucinate",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/why-language-models-hallucinate"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-33e5e5bcd689",
+      "provider": "openai",
+      "published_at": "2026-02-23",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Why we no longer evaluate SWE-bench Verified",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified"
     }
-  ]
+  ],
+  "schema_version": 1
 }

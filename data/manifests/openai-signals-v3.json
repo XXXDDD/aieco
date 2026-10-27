@@ -1,18 +1,24 @@
 {
-  "schema_version": 1,
-  "id": "openai-signals-v3",
-  "provider": "openai",
-  "homepage": "https://openai.com/signals/data-download/",
-  "license": "CC-BY-4.0",
-  "monitoring": "URL changes only (upstream content at a stable URL is not checksummed)",
   "files": [
     {
-      "label": "Data dictionary",
+      "content_length": 531686,
+      "etag": "0x8DF33855C7836AD",
+      "label": "Signals v3.0 data dictionary",
+      "last_modified": "Mon, 26 Oct 2026 17:19:58 GMT",
       "url": "https://cdn.openai.com/signals/data-dictionary.pdf"
     },
     {
-      "label": "Download CSV files of the data",
+      "content_length": 2011697,
+      "etag": "0x8DF33855CA6A9C7",
+      "label": "Signals v3.0 CSV data",
+      "last_modified": "Mon, 26 Oct 2026 17:19:58 GMT",
       "url": "https://cdn.openai.com/signals/data-download-csv.zip"
     }
-  ]
+  ],
+  "homepage": "https://openai.com/signals/data-download/",
+  "id": "openai-signals-v3",
+  "license": "CC-BY-4.0",
+  "monitoring": "Official CDN HEAD ETag, Last-Modified and Content-Length (not a content hash)",
+  "provider": "openai",
+  "schema_version": 1
 }
