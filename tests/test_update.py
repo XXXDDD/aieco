@@ -22,6 +22,39 @@ class CatalogTests(unittest.TestCase):
         items = update.discover("anthropic", "https://www.anthropic.com/research/team/economics", markup)
         self.assertEqual([i["title"] for i in items], ["Labor market impacts of AI"])
 
+    def test_official_rss_only_admits_research_and_evidence_based_adoption(self):
+        rss = """<?xml version="1.0"?>
+<rss version="2.0"><channel>
+<item><title>AI and job productivity study</title><link>https://openai.com/index/jobs-productivity-study/</link><pubDate>Mon, 26 Oct 2026 10:00:00 GMT</pubDate><category>Research</category></item>
+<item><title>Introducing a new model</title><link>https://openai.com/index/introducing-new-model</link><category>Product</category></item>
+<item><title>Examining AI adoption data</title><link>https://openai.com/index/ai-adoption-data</link><category>AI Adoption</category></item>
+<item><title>A company customer story</title><link>https://openai.com/index/customer-story</link><category>AI Adoption</category></item>
+</channel></rss>"""
+        records = update.discover_openai_rss(rss)
+        self.assertEqual(len(records), 2)
+        self.assertEqual(records[0]["published_at"], "2026-10-26")
+        self.assertEqual(records[0]["topics"], ["research"])
+        self.assertEqual(records[1]["topics"], ["adoption"])
+
+    def test_cdn_head_uses_official_host_and_records_revision_headers(self):
+        source = {"id": "test", "provider": "openai", "homepage": "https://openai.com/signals/data-download/",
+                  "license": "CC-BY-4.0", "assets": [{"label": "Data", "url": "https://cdn.openai.com/signals/data-dictionary.pdf"}]}
+        class FakeResponse:
+            headers = {"Content-Length": "123", "ETag": "abc", "Last-Modified": "Tue, 27 Oct 2026 00:00:00 GMT"}
+            def geturl(self):
+                return "https://cdn.openai.com/signals/data-dictionary.pdf"
+            def __enter__(self):
+                return self
+            def __exit__(self, *args):
+                pass
+        with patch.object(update, "urlopen", return_value=FakeResponse()):
+            manifest = update.cdn_head_manifest(source)
+        self.assertEqual(manifest["files"][0]["etag"], "abc")
+        self.assertEqual(manifest["files"][0]["content_length"], 123)
+        source["assets"][0]["url"] = "https://example.com/fake.pdf"
+        with self.assertRaises(ValueError):
+            update.cdn_head_manifest(source)
+
     def test_manifests(self):
         markup = '<a href="https://cdn.openai.com/something.zip">Download CSV files of the data</a>'
         src = {"id": "test", "url": "https://openai.com/signals/data-download/", "homepage": "https://openai.com/signals/data-download/", "license": "CC-BY-4.0"}
