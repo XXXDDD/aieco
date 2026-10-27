@@ -37,4 +37,12 @@ jobs:
                 print(url, resp.status, resp.headers.get("Content-Type"), repr(resp.read(90)))
             except Exception as exc:
               print(url, type(exc).__name__, str(exc))
+          import xml.etree.ElementTree as ET
+          rss = ET.fromstring(urlopen("https://openai.com/news/rss.xml", timeout=15).read(1500000))
+          items = rss.findall(".//item")
+          print("RSS total items:", len(items))
+          for item in items[:12]:
+            print("RSS ITEM:", {tag: item.findtext(tag) for tag in ("title","link","pubDate","category")})
+          site = ET.fromstring(urlopen("https://openai.com/sitemap.xml", timeout=15).read(1500000))
+          print("SITEMAP:", [(x.tag.rsplit("}",1)[-1],x.text) for el in list(site)[:10] for x in list(el)[:1]])
           PY
