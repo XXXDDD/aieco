@@ -2935,6 +2935,30 @@
         "research"
       ],
       "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-7951c5b8003d",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "AI for scientific discovery: How researchers use Claude",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/how-researchers-use-claude"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-25493a43cba5",
+      "provider": "openai",
+      "published_at": "2026-11-03",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Accelerating engineering for the physical world",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world"
     }
   ],
   "schema_version": 1
