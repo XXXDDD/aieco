@@ -2959,6 +2959,95 @@
         "research"
       ],
       "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "anthropic-efe2b5110c7b",
+      "provider": "anthropic",
+      "published_at": null,
+      "source": "discovered:anthropic-economics",
+      "title": "Coding agents in the social sciences",
+      "topics": [],
+      "url": "https://www.anthropic.com/research/coding-agents-social-sciences"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-68ddb817fe40",
+      "provider": "openai",
+      "published_at": "2026-11-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Advancing chip design with OpenAI models",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-2d7a5d6b20ff",
+      "provider": "openai",
+      "published_at": "2026-11-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Broadening access to AI for scientists",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/expanding-chatgpt-for-academic-researchers"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-c1a2af93db54",
+      "provider": "openai",
+      "published_at": "2026-11-20",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/introducing-medchembench"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-1a10f1676d46",
+      "provider": "openai",
+      "published_at": "2026-11-22",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Perplexity and Intelligence",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/perplexity-and-intelligence"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-58da586369f3",
+      "provider": "openai",
+      "published_at": "2026-11-18",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Research acceleration: The jagged frontier",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/research-acceleration-jagged-frontier"
+    },
+    {
+      "dataset_ids": [],
+      "description": "",
+      "id": "openai-d91fd06de7b8",
+      "provider": "openai",
+      "published_at": "2026-11-16",
+      "source": "discovered:openai-official-research-feed",
+      "title": "Science at the Frontier: How scientists use ChatGPT",
+      "topics": [
+        "research"
+      ],
+      "url": "https://openai.com/index/science-at-the-frontier"
     }
   ],
   "schema_version": 1
